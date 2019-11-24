@@ -1,0 +1,26 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.css @ categories='pets'}" />
+<html>
+   <header>
+      <title>AGL - Programming challenge</title>
+      <style>
+      </style>
+   </header>
+   <sly
+      data-sly-use.petsList="${'com.aem.community.core.models.PetsByOwnerGenderModel'}">
+      <body>
+         <h1>Pets by Owner Gender</h1>
+         <div>
+            <h2>Male</h2>
+            <ul data-sly-list="${petsList.males}">
+               <li> ${item}</li>
+            </ul>
+            <h2>Female</h2>
+            <ul data-sly-list="${petsList.females}">
+               <li> ${item}</li>
+            </ul>
+         </div>
+      </body>
+   </sly>
+</html>

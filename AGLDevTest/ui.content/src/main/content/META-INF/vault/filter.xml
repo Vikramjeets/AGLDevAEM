@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/AGLDevTest"/>
+    <filter root="/content/AGLDevTest"/>
+    <filter root="/content/dam/AGLDevTest"/>
+</workspaceFilter>
